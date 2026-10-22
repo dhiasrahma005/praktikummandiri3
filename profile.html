@@ -1,0 +1,275 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Dhias Rahma Aindira</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f1f1f1;
+            color: black;
+        }
+
+        .container {
+            background-color: white;
+            border: 2px solid black;
+            margin: 20px auto;
+            padding: 23px;
+            width: 90%;
+        }
+
+        .profile {
+            display: flex;
+            align-items: flex-start;
+            gap: 22px;
+            padding-bottom: 22px;
+            border-bottom: 2px solid black;
+        }
+
+        .profile img {
+            width: 128px;
+            height: 128px;
+            object-fit: cover;
+            border: 2px solid black;
+        }
+
+        .biodata h1 {
+            margin: 0 0 10px;
+            font-size: 26px;
+        }
+
+        .biodata p {
+            margin: 4px 0;
+            font-size: 15px;
+        }
+
+        nav {
+            background-color: #ddd;
+            border: 1px solid black;
+            padding: 12px;
+            margin-top: 16px;
+        }
+
+        nav a {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 25px;
+        }
+
+        .about {
+            padding: 20px 0;
+            border-bottom: 2px solid black;
+            margin-top: 15px;
+            line-height: 1.65;
+            text-align: justify;
+            font-size: 17px;
+        }
+
+        .media {
+            display: flex;
+            gap: 16px;
+            padding: 16px 0 22px;
+            border-bottom: 2px solid black;
+        }
+
+        .video-box {
+            width: 130px;
+            height: 175px;
+            border: 2px solid black;
+            padding: 6px;
+            flex-shrink: 0;
+        }
+
+        .video-box video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            background-color: black;
+        }
+
+        .gallery {
+            width: 185px;
+            border: 2px solid black;
+            padding: 6px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5px;
+            align-content: start;
+            flex-shrink: 0;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 75px;
+            object-fit: cover;
+            border: 1px solid #555;
+        }
+
+        .attachments {
+            border: 2px solid black;
+            padding: 12px;
+            flex: 1;
+            min-width: 0;
+        }
+
+        .attachments h3 {
+            margin: 0 0 12px;
+        }
+
+        .attachments p {
+            margin: 10px 0;
+        }
+
+        .attachments a {
+            color: blue;
+            font-size: 14px;
+        }
+
+        footer {
+            text-align: center;
+            padding-top: 24px;
+            font-size: 13px;
+        }
+
+        @media (max-width: 650px) {
+            .container {
+                width: auto;
+                margin: 10px;
+                padding: 14px;
+            }
+
+            .profile {
+                gap: 12px;
+            }
+
+            .profile img {
+                width: 90px;
+                height: 90px;
+            }
+
+            .biodata h1 {
+                font-size: 20px;
+            }
+
+            .media {
+                flex-wrap: wrap;
+            }
+
+            .attachments {
+                flex-basis: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <header class="profile">
+        <img src="images/dirduyy.jpeg" alt="Foto Dhias Rahma Aindira">
+
+        <div class="biodata">
+            <h1>Dhias Rahma Aindira</h1>
+            <p>[07,Juni 2008]</p>
+            <p>[Jl. H salim Gg.H Musa 1, RT 03 RW 10]</p>
+            <p>[Cimanggis, Depok ]</p>
+            <p><b>Email:</b>
+                <a href="mailto:dhiasrahma005@gmail.com">
+                    dhiasrahma005@gmail.com
+                </a>
+            </p>
+            <p><b>Telepon:</b> [087791992790]</p>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#attachments">Attachments</a>
+    </nav>
+
+    <article class="about" id="about">
+
+        <section>
+            <p>
+                Halo, perkenalkan saya Dhias Rahma Aindira.
+                Saya merupakan mahasiswa yang tertarik mempelajari
+                perkembangan teknologi, terutama dalam pembuatan
+                website dan aplikasi. Menurut saya, teknologi
+                memberikan banyak kesempatan untuk mengembangkan
+                ide kreatif menjadi sesuatu yang berguna.
+                Melalui perkuliahan, saya berusaha memahami
+                dasar-dasar pemrograman sekaligus meningkatkan
+                kemampuan berpikir kritis dan menyelesaikan masalah.
+            </p>
+
+            <br>
+
+            <p>
+                Selain mengikuti kegiatan perkuliahan, saya juga
+                ingin terus mencoba hal-hal baru yang dapat
+                menambah pengalaman dan wawasan. Saya menyadari
+                bahwa kemampuan tidak diperoleh secara instan,
+                sehingga diperlukan latihan, kesabaran, dan kemauan
+                untuk memperbaiki diri. Ke depannya, saya berharap
+                dapat mengembangkan keterampilan di bidang teknologi
+                informasi, menghasilkan karya yang kreatif, serta
+                menggunakan ilmu yang saya pelajari untuk membantu
+                orang lain.
+            </p>
+        </section>
+
+    </article>
+
+    <div class="media">
+
+        <div class="video-box">
+            <video controls>
+                <source src="videos/IMG_6370.mp4" type="video/mp4">
+                Browser tidak mendukung video.
+            </video>
+        </div>
+
+        <div class="gallery" id="gallery">
+            <img src="images/mata.jpeg" alt="Koleksi foto 1">
+            <img src="images/upscalemedia-transformed (1).jpeg" alt="Koleksi foto 2">
+            <img src="images/upscalemedia-transformed (2).jpeg" alt="Koleksi foto 3">
+            <img src="images/upscalemedia-transformed (3).jpeg" alt="Koleksi foto 4">
+        </div>
+
+        <div class="attachments" id="attachments">
+            <h3><u>Attachments</u></h3>
+
+            <p>
+                📄 <a href="files/upscalemedia-transformed (1).jpeg" download>gambar2</a>
+            </p>
+
+            <p>
+                📄 <a href="files/upscalemedia-transformed (2).jpeg" download>gambar3</a>
+            </p>
+
+            <p>
+                📄 <a href="files/upscalemedia-transformed (3).jpeg" download>gambar4</a>
+            </p>
+
+            <p>
+                📄 <a href="files/mata.jpeg" download>gambar5</a>
+            </p>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Created By Dhias Rahma Aindira - STT Terpadu Nurul Fikri © 2026</p>
+    </footer>
+
+</div>
+
+</body>
+</html>
